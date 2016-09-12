@@ -5,12 +5,16 @@ import com.ironyard.avn.service.PlayerService;
 import com.ironyard.avn.service.UserInputService;
 
 import java.util.List;
-import java.util.Scanner;
 
 /**
  * Created by reeva on 9/12/16.
  */
-public class Game {
+public class Game
+{
+    /**
+     * This is how you run my cool game!
+     * @param args not used
+     */
     public static void main(String[] args) {
         // print out game intro
         System.out.println("Welcome to my game.");
