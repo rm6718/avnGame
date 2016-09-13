@@ -1,6 +1,8 @@
 package com.ironyard.avn;
 
+import com.ironyard.avn.data.players.Ability;
 import com.ironyard.avn.data.players.Player;
+import com.ironyard.avn.service.AbilityService;
 import com.ironyard.avn.service.PlayerService;
 import com.ironyard.avn.service.UserInputService;
 
@@ -30,5 +32,19 @@ public class Game
 
 
         System.out.println("Congrats! You are a " + playerOne);
+
+
+        //abilities selection
+        Ability a1 = null;
+        AbilityService aService = new AbilityService();
+
+
+
+        List<Ability> allAbilities = aService.getAllAbilites();
+        a1 = uiService.chooseAbility(allAbilities);
+
+
+        System.out.println("Congrats! You chose  " + a1);
+
     }
 }
